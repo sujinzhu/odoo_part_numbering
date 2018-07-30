@@ -1,3 +1,22 @@
+GIT
+  remote: git://github.com/akretion/ooor.git
+  revision: f0aa6c70601cc28dbbb519ebec33af40f57b3943
+  specs:
+    ooor (2.3.0)
+      activemodel (>= 3.2.0)
+      faraday
+
+GIT
+  remote: git://github.com/akretion/ooorest.git
+  revision: 83f20f69bdc32a97f8b4f1f9afd85a37a48a3817
+  specs:
+    ooorest (1.9.9)
+      actionpack (>= 3.1)
+      kaminari
+      ooor (>= 1.9)
+      railties (>= 3.1)
+      warden
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -52,6 +71,8 @@ GEM
     debug_inspector (0.0.3)
     erubis (2.7.0)
     execjs (2.7.0)
+    faraday (0.15.2)
+      multipart-post (>= 1.2, < 3)
     ffi (1.9.25-x86-mingw32)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
@@ -65,6 +86,18 @@ GEM
       railties (>= 4.2.0)
       thor (>= 0.14, < 2.0)
     json (1.8.6)
+    kaminari (1.1.1)
+      activesupport (>= 4.1.0)
+      kaminari-actionview (= 1.1.1)
+      kaminari-activerecord (= 1.1.1)
+      kaminari-core (= 1.1.1)
+    kaminari-actionview (1.1.1)
+      actionview
+      kaminari-core (= 1.1.1)
+    kaminari-activerecord (1.1.1)
+      activerecord
+      kaminari-core (= 1.1.1)
+    kaminari-core (1.1.1)
     loofah (2.2.2)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -74,6 +107,7 @@ GEM
     mini_portile2 (2.3.0)
     minitest (5.11.3)
     multi_json (1.13.1)
+    multipart-post (2.0.0)
     nokogiri (1.8.4-x86-mingw32)
       mini_portile2 (~> 2.3.0)
     rack (1.6.10)
@@ -142,6 +176,8 @@ GEM
       tzinfo (>= 1.0.0)
     uglifier (4.1.17)
       execjs (>= 0.3.0, < 3)
+    warden (1.2.7)
+      rack (>= 1.0)
     web-console (2.3.0)
       activemodel (>= 4.0)
       binding_of_caller (>= 0.7.2)
@@ -156,6 +192,8 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   jbuilder (~> 2.0)
   jquery-rails
+  ooor!
+  ooorest!
   rails (= 4.2.10)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
